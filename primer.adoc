@@ -5,6 +5,7 @@
 :execute
 
 :toc:
+:toc-placement: preambe
 
 = Googletest Primer
 
@@ -142,7 +143,7 @@ for (int i = 0; i < x.size(); ++i) {
 ----
 
 Anything that can be streamed to an `ostream` can be streamed to an assertion
-macro–in particular, C strings and `string` objects. If a wide string
+macroâ€“in particular, C strings and `string` objects. If a wide string
 (`wchar_t*`, `TCHAR*` in `UNICODE` mode on Windows, or `std::wstring`) is
 streamed to an assertion, it will be translated to UTF-8 when printed.
 
@@ -463,7 +464,7 @@ your defined tests in order to run them.
 
 After defining your tests, you can run them with `RUN_ALL_TESTS()` , which
 returns `0` if all the tests are successful, or `1` otherwise. Note that
-`RUN_ALL_TESTS()` runs _all tests_ in your link unit – they can be from
+`RUN_ALL_TESTS()` runs _all tests_ in your link unit â€“ they can be from
 different test cases, or even different source files.
 
 When invoked, the `RUN_ALL_TESTS()` macro:
